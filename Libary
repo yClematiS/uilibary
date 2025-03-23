@@ -11,7 +11,7 @@ local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 local function generateRandomNumber()
-    return math.random(1000000, 9999999)  -- สุ่มหมายเลข 7 หลัก
+    return math.random(1000000, 9999999)
 end
 local randomNumber = generateRandomNumber()
 
