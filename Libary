@@ -10,8 +10,12 @@ local LocalPlayer = Players.LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
+local function generateRandomNumber()
+    return math.random(1000000, 9999999)  -- สุ่มหมายเลข 7 หลัก
+end
+local randomNumber = generateRandomNumber()
 
-local ScreenGui = Instance.new('ScreenGui');
+local ScreenGui = Instance.new('ClematisID_' .. randomNumber)
 ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
