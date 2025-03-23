@@ -1,7 +1,7 @@
 local httpService = game:GetService('HttpService')
 
 local SaveManager = {} do
-	SaveManager.Folder = 'Clematis_HubSaveSetting'
+	SaveManager.Folder = 'ClematisHub_Settings'
 	SaveManager.Ignore = {}
 	SaveManager.Parser = {
 		Toggle = {
@@ -160,6 +160,7 @@ local SaveManager = {} do
 		for i = 1, #list do
 			local file = list[i]
 			if file:sub(-5) == '.json' then
+				-- i hate this but it has to be done ...
 
 				local pos = file:find('.json', 1, true)
 				local start = pos
